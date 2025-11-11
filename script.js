@@ -18,3 +18,13 @@ for (i = 0; i < quantAlunos; i++) {
     var media = ((notaAv1 + notaAv2) / 2);
     medias.push(media);
 }
+
+for (j = 0; j < quantAlunos; j++) {
+    for (k = 0; k < quantAlunos - 1; k++) {
+        if (media[k] > media[k + 1]) {
+            var temp = media[k];
+            media[k] = media[k + 1];
+            media[k + 1] = temp;
+        }
+    }
+}
