@@ -1,0 +1,46 @@
+<script>
+    let Notas1 = [9.5,5.0,4.0,7.0];
+    let Notas2 = [7.0,8.5,4.5,2.0];
+    let Médias = [];
+    let QtdAlunos = Notas1.length;
+
+    for (let i = 0; i < QtdAlunos; i++) {
+    let MédiaAluno = (Notas1[i] + Notas2[i]) / 2;
+    Médias.push({NumAluno: i + 1, MédiaAluno: MédiaAluno});
+    }
+
+    let n = Médias.length;
+    for (let i = 0; i < n - 1; i++) {
+    for (let j = 0; j < n - 1 - i; j++) {
+    if  (Médias[j].MédiaAluno > Médias[j + 1].MédiaAluno) {
+    let temp = Médias[j];
+    Médias[j] = Médias[j + 1];
+    Médias[j + 1] = temp;
+      }
+     }
+    }
+    document.write("<h2>Médias dos Alunos (Crescente):</h2>");
+    
+    for (let i = 0; i < QtdAlunos; i++)
+    
+    {
+    document.write("Aluno " + Médias[i].NumAluno + ": " + Médias[i].MédiaAluno + "<br>");
+    }
+    let Aprovados = 0;
+    let Reprovados = 0;
+
+    for (let i = 0; i < QtdAlunos; i++) {
+        
+        if (Médias[i].MédiaAluno > 5.0) {
+            Aprovados++;
+        } else{
+            Reprovados ++;
+        }
+    }
+    document.write("<h2>Resultado da Turma:</h2>");
+    document.write("Alunos Aprovados: " + Aprovados + "<br>");
+    document.write("Alunos Reprovados: " + Reprovados + "<br>");
+
+
+
+</script>

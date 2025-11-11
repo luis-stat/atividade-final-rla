@@ -1,0 +1,1 @@
+var quantAlunos = parseInt(prompt("Informe a quantidade de alunos: "))
