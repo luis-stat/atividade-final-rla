@@ -21,20 +21,20 @@ for (i = 0; i < quantAlunos; i++) {
 
 for (j = 0; j < quantAlunos; j++) {
     for (k = 0; k < quantAlunos - 1; k++) {
-        if (media[k] > media[k + 1]) {
-            var temp = media[k];
-            media[k] = media[k + 1];
-            media[k + 1] = temp;
+        if (medias[k] > medias[k + 1]) {
+            var temp = medias[k];
+            medias[k] = medias[k + 1];
+            medias[k + 1] = temp;
         }
     }
 }
 
 for (n = 0; n < quantAlunos; n++) {
-    if (media [n] > 5) {
-        situacoes[n] = "Aprovados";
+    if (medias[n] > 5) {
+        situacoes[n] = "Aprovado";
         aprovados++;
     } else {
-        situacoes[n] = "Reprovados";
+        situacoes[n] = "Reprovado";
         reprovados++;
     }
 }
