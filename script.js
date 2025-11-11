@@ -44,7 +44,7 @@ document.write("<table border='1' cellpadding='5'>");
 document.write("<tr><th>Aluno</th><th>Média</th><th>Situação</th></tr>");
 
 for (var i = 0; i < quantAlunos; i++) {
-    document.write("<tr><td>" + (i + 1) + "</td><td>" + media[i].toFixed(2) + "</td><td>" + situacao[i] + "</td></tr>");
+    document.write("<tr><td>" + (i + 1) + "</td><td>" + medias[i].toFixed(2) + "</td><td>" + situacao[i] + "</td></tr>");
 }
 
 document.write("</table>");
