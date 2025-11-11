@@ -28,3 +28,13 @@ for (j = 0; j < quantAlunos; j++) {
         }
     }
 }
+
+for (n = 0; n < quantAlunos; n++) {
+    if (media [n] > 5) {
+        situacoes[n] = "Aprovados";
+        aprovados++;
+    } else {
+        situacoes[n] = "Reprovados";
+        reprovados++;
+    }
+}
