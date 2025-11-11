@@ -38,3 +38,7 @@ for (n = 0; n < quantAlunos; n++) {
         reprovados++;
     }
 }
+
+document.write("<h2>Resultados da Turma</h2>");
+document.write("<table border='1' cellpadding='5'>");
+document.write("<tr><th>Aluno</th><th>Média</th><th>Situação</th></tr>");
